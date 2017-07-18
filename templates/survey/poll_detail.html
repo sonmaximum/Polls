@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ object.prompt }}
+
+<ul>
+    {% for response in object.response_set.all %}
+
+        <li>{{ response.answer }}</li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
